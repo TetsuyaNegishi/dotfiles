@@ -1,2 +1,8 @@
 [include]
 	path = .gitconfig.local
+[alias]
+	a = add
+	s = status
+	c = commit
+	d = diff
+	b = branch

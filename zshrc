@@ -151,6 +151,11 @@ alias -g G='| grep'
 
 # git
 alias g='git'
+alias gs='git st'
+alias gb='git br'
+alias gcm='git cm'
+alias gco='git co'
+alias gad='git ad'
 
 # C で標準出力をクリップボードにコピーする
 # mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1

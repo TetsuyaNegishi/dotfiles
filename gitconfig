@@ -3,8 +3,8 @@
 [alias]
 	ad = add
 	st = status
-	cm = commit
-	co = checkout
+	co = commit
+	ch = checkout
 	df = diff
 	br = branch
 	sp = stash pop

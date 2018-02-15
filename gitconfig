@@ -1,8 +1,13 @@
 [include]
 	path = .gitconfig.local
 [alias]
-	a = add
-	s = status
-	c = commit
-	d = diff
-	b = branch
+	ad = add
+	st = status
+	cm = commit
+	co = checkout
+	df = diff
+	br = branch
+	sp = stash pop
+	ss = stash save
+	gr = grep
+	log = log --graph --all --decorate

@@ -152,6 +152,7 @@ alias -g G='| grep'
 # git
 alias g='git'
 alias gs='git st'
+alias ga='git ad'
 alias gb='git br'
 alias gcm='git cm'
 alias gco='git co'

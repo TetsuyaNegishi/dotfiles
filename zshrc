@@ -155,7 +155,9 @@ alias gs='git st'
 alias ga='git ad'
 alias gap='git ad -p'
 alias gb='git br'
+alias gd='git df'
 alias gco='git co'
+alias gcom='git co -m'
 alias gch='git ch'
 
 # C で標準出力をクリップボードにコピーする

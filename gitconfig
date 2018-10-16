@@ -6,6 +6,7 @@
 	co = commit
 	ch = checkout
 	df = diff
+	dfc = diff --cached
 	br = branch
 	sp = stash pop
 	ss = stash save

@@ -9,7 +9,7 @@
 export LANG=ja_JP.UTF-8
 
 #ローカルのzshrcを読み込む
-source .zshrc.local
+source ~/.zshrc.local
 
 # auto directory pushd that you can get dirs list by cd -[tab]
 #  historyの自動保管

@@ -163,6 +163,9 @@ alias gdc='git dfc'
 alias gco='git co'
 alias gcom='git co -m'
 alias gch='git ch'
+alias gpl='g pl'
+alias gps='g ps'
+alias gl='g l'
 
 # hub
 function git(){hub "$@"}

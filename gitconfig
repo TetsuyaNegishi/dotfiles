@@ -11,5 +11,7 @@
 	sp = stash pop
 	ss = stash save
 	gr = grep
-	log = log --graph --all --decorate
-  see = browse
+	l = log --graph --all --decorate
+	ps = push
+	pl = pull
+	see = browse

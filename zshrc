@@ -164,6 +164,9 @@ alias gco='git co'
 alias gcom='git co -m'
 alias gch='git ch'
 
+# hub
+function git(){hub "$@"}
+
 # C で標準出力をクリップボードにコピーする
 # mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
 if which pbcopy >/dev/null 2>&1 ; then
@@ -184,7 +187,7 @@ zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'c
 setopt auto_cd
 function chpwd() { ls }
 
-#cdなしでディレクトリ名を直接指定して移動し、移動後自動でlsする 
+#cdなしでディレクトリ名を直接指定して移動し、移動後自動でlsする
 setopt auto_cd
 function chpwd() { ls }
 

@@ -12,3 +12,4 @@
 	ss = stash save
 	gr = grep
 	log = log --graph --all --decorate
+  see = browse

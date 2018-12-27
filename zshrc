@@ -167,6 +167,9 @@ alias gpl='g pl'
 alias gps='g ps'
 alias gl='g l'
 
+# translate
+alias ten='trans -b :en'
+
 # hub
 function git(){hub "$@"}
 

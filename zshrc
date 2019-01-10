@@ -168,6 +168,9 @@ alias gpl='g pl'
 alias gps='g ps'
 alias gl='g l'
 
+## マージ済みのローカルブランチをすべて削除
+alias gbd='git branch --merged|egrep -v "\*|develop|master"|xargs git branch -d'
+
 # translate
 alias ten='trans -b :en'
 

@@ -171,7 +171,7 @@ alias gl='g l'
 ## マージ済みのローカルブランチをすべて削除
 alias gbd='git branch --merged|egrep -v "\*|develop|master"|xargs git branch -d'
 ## プルリクエスト作成
-alias gpr='git push origin $(git symbolic-ref --short HEAD) && hub browse -- compare/$(git symbolic-ref --short HEAD)'
+alias gpr='git push -u origin $(git symbolic-ref --short HEAD) && hub browse -- compare/$(git symbolic-ref --short HEAD)'
 
 # translate
 alias ten='trans -b :en'

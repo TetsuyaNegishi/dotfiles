@@ -273,3 +273,12 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 # nodebrewの設定
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# pecoで過去のコマンド履歴を検索
+function peco-select-history() {
+  BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER")
+  CURSOR=$#BUFFER
+  zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history

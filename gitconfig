@@ -13,7 +13,7 @@
 	sp = stash pop
 	ss = stash save
 	gr = grep
-	l = log --graph --all --decorate
+	l = log --graph --decorate
 	ps = push
 	pl = pull
 	see = browse

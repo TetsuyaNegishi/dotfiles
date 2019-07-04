@@ -180,6 +180,11 @@ alias ten='trans -b :en'
 # hub
 function git(){hub "$@"}
 
+# yarn
+alias y='yarn'
+alias ys='y start'
+alias ya='y add'
+
 # C で標準出力をクリップボードにコピーする
 # mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
 if which pbcopy >/dev/null 2>&1 ; then

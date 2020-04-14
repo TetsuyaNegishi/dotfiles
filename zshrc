@@ -168,6 +168,7 @@ alias gchd='g ch develop'
 alias gpl='g pl'
 alias gps='g ps'
 alias gl='g l'
+alias gsw='g sw'
 
 ## マージ済みのローカルブランチをすべて削除
 alias gbd='git branch --merged|egrep -v "\*|develop|master"|xargs git branch -d'

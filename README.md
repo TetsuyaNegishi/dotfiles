@@ -17,16 +17,6 @@ git clone https://github.com/TetsuyaNegishi/ConfigFile
 ./ConfigFile/link.sh
 ```
 
-### git
-
-.gitconfig.localをコピーしてホームディレクトリに生成
-
-```
-cp ConfigFile/gitconfig.local.example .gitconfig.local
-```
-
-.gitconfig.localの内部のnameとemailを適宜変更する
-
 ### brew
 
 Brewfileのアプリをインストールする

@@ -292,4 +292,17 @@ bindkey '^r' peco-select-history
 # z
 . `brew --prefix`/etc/profile.d/z.sh
 
-alias ghq-cd='cd $(ghq root)/$(ghq list | peco)'
+alias cdghq='cd $(ghq root)/$(ghq list | peco)'
+
+# pecoでVSCodeのworkspaceを検索
+# workspaceを'~/vscode-workspace'に保存すること
+function peco-vscode-workspace() {
+  VSCODE_WORKSPACE="${HOME}/vscode-workspace"
+  BUFFER=$(ls ${VSCODE_WORKSPACE} | peco )
+  CURSOR=$#BUFFER
+  code "${VSCODE_WORKSPACE}/${BUFFER}"
+  REPOSITORY_PATH="${VSCODE_WORKSPACE}/$(cat "${VSCODE_WORKSPACE}/${BUFFER}" | jq -r '.folders[0].path')"
+  cd $REPOSITORY_PATH
+}
+zle -N peco-vscode-workspace
+alias cw=peco-vscode-workspace

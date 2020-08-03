@@ -1,0 +1,30 @@
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true && defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true   # 三本指でドラッグ
+defaults write -g com.apple.mouse.tapBehavior -int 1   # タップしたときクリック
+
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false   # ウィンドウを開閉するときのアニメーションを無効
+defaults write -g NSWindowResizeTime -float 0.001   # ウィンドウサイズを調整する際の加速再生
+
+defaults write com.apple.finder AppleShowAllFiles YES   # すべてのファイルを表示
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true    # Finder のタイトルバーにフルパスを表示する
+defaults write com.apple.finder AnimateWindowZoom -bool false    # フォルダを開くときのアニメーションを無効にする
+defaults write com.apple.finder AppleShowAllFiles YES    # 不可視ファイルを表示する
+defaults write com.apple.finder ShowPathbar -bool true    # パスバーを表示する
+defaults write com.apple.finder ShowStatusBar -bool true    # ステータスバーを表示する
+defaults write com.apple.finder ShowTabView -bool true    # タブバーを表示する
+defaults write com.apple.finder DisableAllAnimations -bool true   # 情報ウィンドウを開くときのアニメーションを無効
+
+defaults write com.apple.dock autohide -bool true   # Dockを自動的に隠す
+defaults write com.apple.dock autohide-delay -float 0    # Dock が表示されるまでの待ち時間を無効にする
+defaults write com.apple.dock launchanim -bool false   # Dockからアプリを起動するときのアニメーションを無効
+
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true    # 全ての拡張子のファイルを表示する
+defaults write NSGlobalDomain KeyRepeat -int 2    # キーリピートの速度
+defaults write NSGlobalDomain InitialKeyRepeat -int 15    # キーリピート開始までのタイミング
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001    # コンソールアプリケーションの画面サイズ変更を高速にする
+
+defaults write com.apple.screencapture location ~/ScreenShot   # スクリーンショットのディレクトリ変更
+
+defaults write -g QLPanelAnimationDuration -float 0   # Quick Lookウィンドウのアニメーションをオフ
+
+killall Finder
+killall Dock

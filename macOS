@@ -18,8 +18,8 @@ defaults write com.apple.dock autohide-delay -float 0    # Dock が表示され�
 defaults write com.apple.dock launchanim -bool false   # Dockからアプリを起動するときのアニメーションを無効
 
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true    # 全ての拡張子のファイルを表示する
-defaults write NSGlobalDomain KeyRepeat -int 2    # キーリピートの速度
-defaults write NSGlobalDomain InitialKeyRepeat -int 15    # キーリピート開始までのタイミング
+defaults write NSGlobalDomain KeyRepeat -int 4    # キーリピートの速度
+defaults write NSGlobalDomain InitialKeyRepeat -int 20    # キーリピート開始までのタイミング
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001    # コンソールアプリケーションの画面サイズ変更を高速にする
 
 defaults write com.apple.screencapture location ~/ScreenShot   # スクリーンショットのディレクトリ変更

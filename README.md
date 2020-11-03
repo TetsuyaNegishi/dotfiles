@@ -11,18 +11,10 @@ cd ~/
 git clone https://github.com/TetsuyaNegishi/ConfigFile
 ```
 
-シンボリックリンクをホームディレクトリ上に生成
+setup.shを実行
 
 ```
-./ConfigFile/link.sh
-```
-
-### brew
-
-Brewfileのアプリをインストールする
-
-```
-brew bundle
+./ConfigFile/setup.sh
 ```
 
 ### zsh

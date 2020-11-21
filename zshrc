@@ -277,8 +277,8 @@ esac
 # vscodeをコマンドラインから起動させる
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
-# nodebrewの設定
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+# nvmの設定
+source $(brew --prefix nvm)/nvm.sh
 
 # pecoで過去のコマンド履歴を検索
 function peco-select-history() {

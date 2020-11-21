@@ -1,6 +1,6 @@
 tap "homebrew/core"
 tap "homebrew/bundle"
-brew "nodebrew"
+brew "nvm"
 brew "tree"
 brew "yarn"
 brew "zsh"

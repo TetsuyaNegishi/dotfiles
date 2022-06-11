@@ -272,11 +272,6 @@ case ${OSTYPE} in
         ;;
 esac
 
-# vim:set ft=zsh:
-
-# vscodeをコマンドラインから起動させる
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-
 # nvmの設定
 source $(brew --prefix nvm)/nvm.sh
 

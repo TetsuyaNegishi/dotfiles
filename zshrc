@@ -202,9 +202,7 @@ fi
 #保管色付け
 zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 
-#cdとlsの省略
-setopt auto_cd
-function chpwd() { ls }
+alias ls=exa
 
 #cdなしでディレクトリ名を直接指定して移動し、移動後自動でlsする
 setopt auto_cd
@@ -214,8 +212,6 @@ function chpwd() { ls }
 #PROMPT="%/%% "
 #PROMPT2="%_%% "
 SPROMPT="%r is correct? [n,y,a,e]:] "
-
-alias ls=exa
 
 # nvmの設定
 source $(brew --prefix nvm)/nvm.sh
@@ -279,3 +275,6 @@ zinit ice as"program" from"gh-r" mv"bin/exa* -> exa"
 zinit light ogham/exa
 
 alias relogin='exec $SHELL -l'
+
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions

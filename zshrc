@@ -324,3 +324,11 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
+
+# bat
+zinit ice as"program" from"gh-r" mv"bat* -> bat" pick"bat/bat"
+zinit light sharkdp/bat
+
+# exa
+zinit ice as"program" from"gh-r" mv"bin/exa* -> exa"
+zinit light ogham/exa

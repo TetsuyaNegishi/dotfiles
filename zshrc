@@ -332,3 +332,5 @@ zinit light sharkdp/bat
 # exa
 zinit ice as"program" from"gh-r" mv"bin/exa* -> exa"
 zinit light ogham/exa
+
+alias relogin='exec $SHELL -l'

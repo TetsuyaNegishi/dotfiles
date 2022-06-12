@@ -254,23 +254,7 @@ qiita() {
 #PROMPT2="%_%% "
 SPROMPT="%r is correct? [n,y,a,e]:] "
 
-
-#ls色付け
-export LSCOLORS=exfxcxdxbxegedabagacad
-export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
-########################################
-# OS 別の設定
-case ${OSTYPE} in
-    darwin*)
-        #Mac用の設定
-        export CLICOLOR=1
-        alias ls='ls -G -F'
-        ;;
-    linux*)
-        #Linux用の設定
-        alias ls='ls -F --color=auto'
-        ;;
-esac
+alias ls=exa
 
 # nvmの設定
 source $(brew --prefix nvm)/nvm.sh

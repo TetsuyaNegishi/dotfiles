@@ -7,7 +7,7 @@ CURRENT_DIR=`pwd`
 mkdir -p ~/vscode-workspace
 mkdir -p ~/ScreenShot
 
-ln -sf "$CURRENT_DIR/fish" ~/.config/fish
+ln -sf "$CURRENT_DIR/fish" ~/.config/
 
 ln -sf "$CURRENT_DIR/gitconfig" ~/.gitconfig
 ln -sf "$CURRENT_DIR/gitignore_global" ~/.gitignore_global
@@ -27,3 +27,6 @@ rm ./crontab_tmp
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew bundle
+
+echo "/usr/local/bin/fish" >> /etc/shells
+chsh -s /usr/local/bin/fish

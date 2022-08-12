@@ -1,3 +1,4 @@
 /functions/*
 !/functions/fish_prompt.fish
 !/functions/fisher.fish
+!/functions/cw.fish

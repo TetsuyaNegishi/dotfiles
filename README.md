@@ -17,10 +17,6 @@ setup.shを実行
 ./ConfigFile/setup.sh
 ```
 
-### zsh
-
-端末固有のコマンドを定義したいときは`~/.zshrc.local`に書く
-
 ## 参考
 
 - [Web系エンジニア必須の環境設定　＜その１＞dotfilesをGitHubで管理](http://tango-ruby.hatenablog.com/entry/2017/02/07/235714)

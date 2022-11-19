@@ -2,11 +2,13 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true  # 三本指でドラッグ
 defaults write -g com.apple.mouse.tapBehavior -int 1   # タップしたときクリック
 
-defaults write -g com.apple.trackpad.scaling -float 2.5 # トラックパッドの軌跡の速さ
+defaults write -g com.apple.trackpad.scaling -float 6 # トラックパッドの軌跡の速さ
 
 # トラックパッド -> クリック：弱い
 defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
 defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 0
+
+defaults write com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick -int 2 # 右クリックはトラックパッドの右下を押下する
 
 defaults write NSGlobalDomain _HIHideMenuBar -bool true   # メニューバーを自動的に隠す
 

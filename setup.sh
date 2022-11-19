@@ -9,11 +9,11 @@ mkdir -p ~/ScreenShot
 
 ln -sf "$CURRENT_DIR/fish" ~/.config/
 
-ln -sf "$CURRENT_DIR/gitconfig" ~/.gitconfig
-ln -sf "$CURRENT_DIR/gitignore_global" ~/.gitignore_global
+ln -sf "$CURRENT_DIR/git/.gitconfig" ~/.gitconfig
+ln -sf "$CURRENT_DIR/git/.gitignore_global" ~/.gitignore_global
 
 echo "==== setup gitconfig ==="
-cp -f ./gitconfig.local.example ~/.gitconfig.local
+cp -f ./git/.gitconfig.local.example ~/.gitconfig.local
 read -p "name: " name
 sed -i -e "s/<name>/$name/" ~/.gitconfig.local
 read -p "email: " email

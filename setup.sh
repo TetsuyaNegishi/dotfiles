@@ -13,7 +13,7 @@ ln -sf "$CURRENT_DIR/gitconfig" ~/.gitconfig
 ln -sf "$CURRENT_DIR/gitignore_global" ~/.gitignore_global
 
 echo "==== setup gitconfig ==="
-cp ./gitconfig.local.example ~/.gitconfig.local
+cp -f ./gitconfig.local.example ~/.gitconfig.local
 read -p "name: " name
 sed -i -e "s/<name>/$name/" ~/.gitconfig.local
 read -p "email: " email

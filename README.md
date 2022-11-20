@@ -5,8 +5,7 @@
 ## 使い方
 
 ```
-# Todo: pathを正しいものに修正
-curl "brew file path" | bash
+sudo curl "https://raw.githubusercontent.com/TetsuyaNegishi/dotfiles/master/scripts/brew-install.sh" | bash
 ```
 
 リポジトリをホームディレクトリにクローンする

@@ -2,3 +2,5 @@
 !/functions/fish_prompt.fish
 !/functions/fisher.fish
 !/functions/cw.fish
+
+/conf.d/local_environment_variable.fish

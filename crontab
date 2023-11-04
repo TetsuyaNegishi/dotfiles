@@ -1,2 +1,0 @@
-0 9 * * *  find <home>/ScreenShot -mtime +7 -type f -print0 | xargs -0 rm
-0 9 * * *  find <home>/Downloads -mtime +7 -type f -print0 | xargs -0 rm

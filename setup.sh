@@ -23,9 +23,5 @@ sed -i -e "s/<email>/$email/" ~/.gitconfig.local
 
 source ./macOS
 
-sed -e "s|<home>|$HOME|g" ./crontab > ./crontab_tmp
-crontab ./crontab_tmp
-rm -f ./crontab_tmp
-
 echo "/usr/local/bin/fish" >> /etc/shells
 chsh -s /usr/local/bin/fish

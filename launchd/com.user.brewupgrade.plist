@@ -17,8 +17,8 @@
     <integer>0</integer>
   </dict>
   <key>StandardErrorPath</key>
-  <string>/tmp/com.user.brewupgrade.err</string>
+  <string>/tmp/com.user.brewupgrade/err.log</string>
   <key>StandardOutPath</key>
-  <string>/tmp/com.user.brewupgrade.out</string>
+  <string>/tmp/com.user.brewupgrade/out.log</string>
 </dict>
 </plist>

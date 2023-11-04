@@ -9,6 +9,8 @@ mkdir -p ~/ScreenShot
 
 ln -sf "$CURRENT_DIR/fish" ~/.config/
 
+ln -sf "$CURRENT_DIR/launchd/com.user.brewupgrade.plist" ~/Library/LaunchAgents/
+
 ln -sf "$CURRENT_DIR/git/.gitconfig" ~/.gitconfig
 ln -sf "$CURRENT_DIR/git/.gitignore_global" ~/.gitignore_global
 

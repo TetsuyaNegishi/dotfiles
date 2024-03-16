@@ -6,10 +6,13 @@ CURRENT_DIR=`pwd`
 
 mkdir -p ~/vscode-workspace
 mkdir -p ~/ScreenShot
+mkdir -p ~/Library/dotfiles
+
+ln -sf "$CURRENT_DIR/scripts" ~/Library/dotfiles
+cat "$CURRENT_DIR/launchd/com.user.brewupgrade.plist" > ~/Library/LaunchAgents/com.user.brewupgrade.plist
+cat "$CURRENT_DIR/launchd/com.user.cleanup-files.plist" | sed "s|\$HOME|$HOME|g" > ~/Library/LaunchAgents/com.user.cleanup-files.plist
 
 ln -sf "$CURRENT_DIR/fish" ~/.config/
-
-ln -sf "$CURRENT_DIR/launchd/com.user.brewupgrade.plist" ~/Library/LaunchAgents/
 
 ln -sf "$CURRENT_DIR/git/.gitconfig" ~/.gitconfig
 ln -sf "$CURRENT_DIR/git/.gitignore_global" ~/.gitignore_global

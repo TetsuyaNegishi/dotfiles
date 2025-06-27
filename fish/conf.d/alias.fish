@@ -35,3 +35,8 @@ alias gpr='git push -u origin $(git symbolic-ref --short HEAD) && hub browse -- 
 
 alias cdghq='cd $(ghq root)/$(ghq list | peco)'
 alias relogin='exec $SHELL -l'
+
+# git worktree
+function gw
+    git worktree add -b $argv[1] ./.git-worktree/$argv[1]
+end

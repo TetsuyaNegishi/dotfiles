@@ -4,6 +4,8 @@
 
 ## 使い方
 
+homebrew関連のセットアップ
+
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 sudo curl "https://raw.githubusercontent.com/TetsuyaNegishi/dotfiles/master/scripts/brew-install.sh" | bash
@@ -12,14 +14,14 @@ sudo curl "https://raw.githubusercontent.com/TetsuyaNegishi/dotfiles/master/scri
 リポジトリをホームディレクトリにクローンする
 
 ```
-cd ~/
-git clone https://github.com/TetsuyaNegishi/ConfigFile
+ghq get https://github.com/TetsuyaNegishi/dotfiles
 ```
 
 setup.shを実行
 
 ```
-./ConfigFile/setup.sh
+cd path/to/dotfiles
+./setup.sh
 ```
 
 ## 参考

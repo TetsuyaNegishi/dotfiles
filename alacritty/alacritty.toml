@@ -1,6 +1,6 @@
 
 [terminal.shell]
-program = "/usr/local/bin/fish"
+program = "/opt/homebrew/bin/fish"
 args = ["-l", "-c", "tmux a -t base || tmux new -s base"]
 
 [window]
@@ -13,7 +13,7 @@ padding.y = 3
 position.x = 0
 position.y = 0
 
-startup_mode = "SimpleFullscreen"
+startup_mode = "Maximized"
 
 decorations = "None"
 decorations_theme_variant =	"Dark"

@@ -7,6 +7,7 @@ CURRENT_DIR=`pwd`
 mkdir -p ~/vscode-workspace
 mkdir -p ~/ScreenShot
 mkdir -p ~/Library/dotfiles
+mkdir -p ~/.config
 
 ln -sfn "$CURRENT_DIR/scripts" ~/Library/dotfiles
 ln -sfn "$CURRENT_DIR/fish" ~/.config/
@@ -31,10 +32,10 @@ fi
 
 source ./macOS
 
-if ! grep -q "/usr/local/bin/fish" /etc/shells; then
-    echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+if ! grep -q "/opt/homebrew/bin/fish" /etc/shells; then
+    echo "/opt/homebrew/bin/fish" | sudo tee -a /etc/shells
 fi
 
-if [ "$SHELL" != "/usr/local/bin/fish" ]; then
-    chsh -s /usr/local/bin/fish
+if [ "$SHELL" != "/opt/homebrew/bin/fish" ]; then
+    chsh -s /opt/homebrew/bin/fish
 fi

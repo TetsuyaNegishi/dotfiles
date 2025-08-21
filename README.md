@@ -7,7 +7,7 @@
 homebrew関連のセットアップ
 
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 sudo curl "https://raw.githubusercontent.com/TetsuyaNegishi/dotfiles/master/scripts/brew-install.sh" | bash
 ```
 

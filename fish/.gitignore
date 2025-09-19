@@ -4,3 +4,4 @@
 !/functions/cw.fish
 
 /conf.d/local_environment_variable.fish
+fish_variables

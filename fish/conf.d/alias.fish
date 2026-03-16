@@ -40,3 +40,5 @@ alias relogin='exec $SHELL -l'
 function gw
     git worktree add -b $argv[1] ./.git-worktree/$argv[1]
 end
+
+alias rm='trash'

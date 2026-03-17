@@ -8,6 +8,7 @@ mkdir -p ~/vscode-workspace
 mkdir -p ~/ScreenShot
 mkdir -p ~/Library/dotfiles
 mkdir -p ~/.config
+mkdir -p ~/.claude
 
 ln -sfn "$CURRENT_DIR/scripts" ~/Library/dotfiles
 ln -sfn "$CURRENT_DIR/fish" ~/.config/
@@ -17,6 +18,8 @@ ln -sfn "$CURRENT_DIR/hammerspoon" ~/.hammerspoon
 
 ln -sfn "$CURRENT_DIR/git/.gitconfig" ~/.gitconfig
 ln -sfn "$CURRENT_DIR/git/.gitignore_global" ~/.gitignore_global
+
+ln -sfn "$CURRENT_DIR/claude/settings.json" ~/.claude/settings.json
 
 cat "$CURRENT_DIR/launchd/com.user.brewupgrade.plist" > ~/Library/LaunchAgents/com.user.brewupgrade.plist
 cat "$CURRENT_DIR/launchd/com.user.cleanup-files.plist" | sed "s|\$HOME|$HOME|g" > ~/Library/LaunchAgents/com.user.cleanup-files.plist

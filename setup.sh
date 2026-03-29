@@ -14,6 +14,7 @@ ln -sfn "$CURRENT_DIR/scripts" ~/Library/dotfiles
 ln -sfn "$CURRENT_DIR/fish" ~/.config/
 ln -sfn "$CURRENT_DIR/alacritty" ~/.config/
 ln -sfn "$CURRENT_DIR/tmux" ~/.config/
+ln -sfn "$CURRENT_DIR/cage" ~/.config/
 ln -sfn "$CURRENT_DIR/hammerspoon" ~/.hammerspoon
 
 ln -sfn "$CURRENT_DIR/git/.gitconfig" ~/.gitconfig

@@ -1,0 +1,40 @@
+presets:
+  base:
+    allow:
+      - "."
+      - "/private/tmp" # macos tmp directory
+      - "/var/folders" # macos mktemp
+      - "/private/var/folders" # macos mktemp
+      - "/Library/Caches" # macos app caches
+      - "$HOME/Library/Caches" # macos app caches
+
+  npm:
+    allow:
+      - "$HOME/.npm"
+      - "$HOME/.npmrc"
+      - "$HOME/.config/.wrangler"
+
+  git-enabled:
+    allow-git: true
+    allow-keychain: true # macOS only
+
+  claude-code:
+    allow:
+      - "$CLAUDE_CONFIG_DIR"
+      - "$HOME/.serena"
+      - "$HOME/.agent-browser"
+      - "$HOME/.browser-profile"
+      - ".serena"
+
+auto-presets:
+  - command: claude
+    presets:
+      - base
+      - git-enabled
+      - npm
+      - claude-code
+
+  - command: git
+    presets:
+      - base
+      - git-enabled

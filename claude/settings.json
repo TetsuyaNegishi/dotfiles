@@ -1,9 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "sandbox": {
-    "enabled": true,
-    "allowUnsandboxedCommands": false
-  },
   "permissions": {
     "allow": [
       "Read",
@@ -28,9 +24,21 @@
       "Read(./config/credentials.json)",
       "Read(**/*.pem)",
       "Read(**/*.key)"
-    ]
+    ],
+    "defaultMode": "bypassPermissions"
   },
   "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "guard-and-guide"
+          }
+        ]
+      }
+    ],
     "Notification": [
       {
         "hooks": [
@@ -51,5 +59,25 @@
         ]
       }
     ]
-	}
+  },
+  "enabledPlugins": {
+    "serena@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "agent-browser@agent-browser": true
+  },
+  "extraKnownMarketplaces": {
+    "agent-browser": {
+      "source": {
+        "source": "github",
+        "repo": "vercel-labs/agent-browser"
+      }
+    }
+  },
+  "sandbox": {
+    "enabled": true
+  },
+  "skipDangerousModePermissionPrompt": true
 }

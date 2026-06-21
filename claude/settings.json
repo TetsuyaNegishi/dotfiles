@@ -26,6 +26,7 @@
     ],
     "defaultMode": "bypassPermissions"
   },
+  "model": "opus",
   "hooks": {
     "PreToolUse": [
       {
@@ -57,15 +58,25 @@
           }
         ]
       }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/negishi-tetsuya/.claude/hooks/session-logger.py"
+          }
+        ]
+      }
     ]
   },
   "enabledPlugins": {
-    "serena@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
     "code-review@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
     "frontend-design@claude-plugins-official": true,
-    "agent-browser@agent-browser": true
+    "agent-browser@agent-browser": true,
+    "commit-commands@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "agent-browser": {
@@ -74,6 +85,9 @@
         "repo": "vercel-labs/agent-browser"
       }
     }
+  },
+  "sandbox": {
+    "enableWeakerNetworkIsolation": true
   },
   "skipDangerousModePermissionPrompt": true
 }
